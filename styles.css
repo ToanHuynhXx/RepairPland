@@ -1,0 +1,179 @@
+body {
+    text-align: center;
+    background-color: #effae1;
+}
+.pland-repair
+{
+    position: relative; /* QUAN TRỌNG: Đây là "mốc" để nút bám vào */
+    background-color: #cbc9ce;  
+    border-radius: 10px;
+    padding: 1px;
+    margin: 0px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+    margin: 5px; /* Khoảng cách phía dưới tiêu đề */
+}
+.btn-left {
+    position: absolute;
+    left: 10px; /* Khoảng cách từ lề trái */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Bù trừ để nút nằm chính giữa dòng */
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+
+
+@media(max-width: 1070px) {
+    .header-title {
+    font-size: 1.2rem; /* Thu nhỏ tiêu đề */
+    }
+    .PlandTable table thead th,
+    .repair-table thead th {
+        font-size: 0.7rem; /* Thu nhỏ kích thước chữ trong tiêu đề bảng */
+        padding: 5px 2px; /* Thu nhỏ khoảng cách đệm trong tiêu đề bảng */
+    }
+    .PlandTable table tbody td,
+    .repair-table tbody td {
+        font-size: 0.7rem; /* Thu nhỏ kích thước chữ trong hàng dữ liệu */
+        padding: 2px 2px; /* Thu nhỏ khoảng cách đệm trong hàng dữ liệu */
+    }
+}
+.PlandTable {
+    height: 50vh;          /* Chiều cao tối đa của vùng chứa */
+    max-height: 400px;    /* Giả sử mỗi hàng cao 40px x 10 hàng = 400px */
+    overflow-y: auto;     /* Hiện thanh cuộn dọc khi nội dung vượt quá height */
+    overflow-x: auto;     /* Hiện thanh cuộn ngang nếu bảng quá rộng */
+    border: 1px solid #ccc; /* Viền ngoài cho vùng chứa */
+    background-color: #bad8f8;
+}
+.chart-container {
+    width: 49%;  /* Chiều rộng biểu đồ */
+    height:43vh; /* Chiều cao biểu đồ */
+    float: left;   /* Đẩy về bên trái */
+    margin-top: 0px; /* Thêm khoảng cách phía trên biểu đồ */
+}
+.chart-section {
+    width: 49% !important;   /* Cho phép co lại khi màn hình nhỏ */
+    height:43vh; /* Chiều cao biểu đồ */
+    float: right;   /* Đẩy về bên phải */
+}
+table {
+    width: 100%;
+    border-collapse: separate; /* Giữ khoảng cách giữa các ô */
+    margin-top: 0px;
+}
+
+th, td {
+    padding: 10px 8px; /* Giảm khoảng cách đệm giữa các ô */
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd; /* Thêm đường viền bên trái cho các ô */
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+}
+
+#repair-table {
+    thead {
+    font-size: 15px;       /* Bạn có thể chỉnh 10px, 12px tùy ý */
+    font-weight: bold;     /* Giữ độ đậm hoặc chỉnh thành 'normal' nếu muốn chữ thanh hơn */
+    padding: 5px 2px;      /* Thu nhỏ khoảng cách đệm để tiêu đề gọn hơn */
+    text-align: center;    /* Căn giữa chữ */
+        }
+    tbody {
+
+        font-size: 14px;       /* Bạn có thể chỉnh 10px, 11px tùy ý */
+        padding: 2px 2px;      /* Thu nhỏ khoảng cách đệm để hàng dữ liệu gọn hơn */
+        }
+    th:nth-child(1) {
+        width: 2%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(2) {
+        width: 3%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(3) {
+        width: 7%;
+        vertical-align: middle;
+        text-align: left;
+    }
+    th:nth-child(4) {
+        width: 5%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(5) {
+        width: 15%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(6) {
+        width: 10%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(7) {
+        width: 8%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(8) {
+        width: 7%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(9) {
+        width:7%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(10) {
+        width: 7%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(11) {
+        width: 7%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(12) {
+        width: 7%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    th:nth-child(13) {
+        vertical-align: middle;
+        text-align: center;
+    }
+    input, select {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 !important;      /* Loại bỏ hoàn toàn lề ngoài */
+        display: block;            /* Để input hoạt động như một khối lấp đầy ô */
+    }   
+
+    #data-repair {
+    button{
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    th, td {
+    padding: 2px 2px; /* Giảm khoảng cách đệm giữa các ô */
+    }
+
+    }
+
+}
