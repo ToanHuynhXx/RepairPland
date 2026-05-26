@@ -1,0 +1,173 @@
+.header-title {
+    text-align: center;
+    font-size: 1.5rem; /* Kích thước chữ lớn hơn */
+    color: #333;
+    font-weight: bold;
+    background: #95ff00;
+}
+
+.TableDATA {
+    display: flex;          /* Lệnh quyền lực ép các bảng xếp thành hàng ngang */
+    gap: 20px;              /* Tạo khoảng trống 20px ở giữa 2 bảng cho thoáng */
+    justify-content: space-between; /* Đẩy 2 bảng dãn đều ra 2 bên */
+    width: 100%;            /* Chiếm toàn bộ chiều rộng trang */
+}
+
+.DeviceTable {
+    max-height: 660px; /* Bạn có thể thay đổi số này (VD: 400px, 500px) cho phù hợp với trang web */
+    overflow-y: auto;  /* Tự động hiện thanh cuộn dọc khi dữ liệu dài quá 300px */
+    border-bottom: 1px solid #000; /* Tùy chọn: Chốt viền dưới cùng cho đẹp */
+}
+.DeviceTable #Table-1{
+    height: 100%;   
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin:  0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+.DeviceTable #Table-1 thead th {
+    border: 1px solid #000000; /* 1px là độ dày, solid là nét liền, #000000 là màu đen */
+    padding: 5px;              /* Tạo khoảng trống cho chữ đỡ sát viền */
+    background-color: #d8e287; /* Tùy chọn: Đổ màu nền xám nhạt */
+    font-size: 11px; /* Kích thước chữ lớn hơn */
+    position: sticky;              /* Ghim tiêu đề */
+    top: 0;                        /* Ghim sát mép trên */
+    z-index: 10;
+    }
+.DeviceTable #Table-1 tbody td {
+    border: 1px solid #000000; /* 1px là độ dày, solid là nét liền, #000000 là màu đen */
+    padding: 8px;              /* Tạo khoảng trống cho chữ đỡ sát viền */
+    font-size: 11px; /* Kích thước chữ lớn hơn */
+    }
+.DeviceTable #Table-1 input[type="number"]::-webkit-outer-spin-button,
+.DeviceTable #Table-1 input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.DeviceTable #Table-1 input {
+    width: 100%;
+    box-sizing: border-box; /* 👈 THÊM DÒNG QUYỀN LỰC NÀY VÀO */
+    margin: 0;              /* Đảm bảo không có lề thừa đẩy input đi chệch hướng */
+    border: none;            /* Xóa đường viền mặc định của input */
+    outline: none;
+    background: transparent;
+}
+.DeviceTable #Table-2{
+    height: 100%;   
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: auto; 
+    margin-right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+.DeviceTable #Table-2 thead th {
+    border: 1px solid #000000; /* 1px là độ dày, solid là nét liền, #000000 là màu đen */
+    padding: 5px;              /* Tạo khoảng trống cho chữ đỡ sát viền */
+    background-color: #68a2c6; /* Tùy chọn: Đổ màu nền xám nhạt */
+    font-size: 11px; /* Kích thước chữ lớn hơn */
+    position: sticky;              /* Ghim tiêu đề */
+    top: 0;                        /* Ghim sát mép trên */
+    z-index: 10;
+    }
+.DeviceTable #Table-2 tbody td {
+    border: 1px solid #000000; /* 1px là độ dày, solid là nét liền, #000000 là màu đen */
+    padding: 8px;              /* Tạo khoảng trống cho chữ đỡ sát viền */
+    font-size: 11px; /* Kích thước chữ lớn hơn */
+    }
+.DeviceTable #Table-2 input[type="number"]::-webkit-outer-spin-button,
+.DeviceTable #Table-2 input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}  
+
+.DeviceTable #Table-2 input {
+    width: 100%;
+    box-sizing: border-box; /* 👈 THÊM DÒNG QUYỀN LỰC NÀY VÀO */
+    margin: 0;              /* Đảm bảo không có lề thừa đẩy input đi chệch hướng */
+    border: none;            /* Xóa đường viền mặc định của input */
+    outline: none;
+    background: transparent;
+}
+.DeviceTable td {
+    border: 1px solid #000000;
+    padding: 0;                    /* Bỏ padding của td để input lấp đầy ô */
+}
+.footer {
+    display: flex;
+    justify-content: space-between; /* Đẩy 2 khối ra 2 bên */
+    gap: 20px;                      /* Khớp với gap của TableDATA */
+    width: 100%;                    /* Trải dài toàn màn hình */
+    margin-top: 15px;               /* Cách bảng một chút cho đẹp */
+}
+
+/* Chia đôi không gian footer, mỗi bên chiếm đúng 49% như cái bảng */
+.footer-half {
+    width: 49%; 
+    display: flex;
+    justify-content: center;        /* Lệnh này sẽ căn cái nút nằm ngay chính giữa bảng của nó */
+
+}
+.submit-btn {
+    background-color: #007BFF; /* Màu xanh dương */
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.edit-btn {
+    background-color: #cccccc; /* Giả sử màu xám ban đầu */
+    color: black;
+    /* các thuộc tính khác... */
+}
+.btn-blue {
+    background-color: #007BFF !important; /* Màu xanh dương */
+    color: white !important;
+    border: 2px solid #0056b3 !important;
+}
+
+/* Hiệu ứng Loading khi tải trang web */
+.loading-overlay {
+    display: none; /* Mặc định ẩn, chỉ hiện khi JS gọi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Làm mờ phần nền phía sau */
+    z-index: 9999; /* Đảm bảo luôn nằm trên cùng mọi thành phần khác */
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-content {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Biểu tượng vòng tròn xoay (Spinner) */
+.spinner {
+    border: 4px solid #f3f3f3; /* Màu nền của vòng */
+    border-top: 4px solid #007BFF; /* Màu xanh của phần xoay */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Chuyển động xoay vòng */
+    margin: 0 auto 15px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
